@@ -2,7 +2,7 @@ from paddleocr import PaddleOCR
 import cv2
 import numpy as np
 
-ocr = PaddleOCR(use_angle_cls=True, lang='en')
+ocr = PaddleOCR(use_angle_cls=False, lang='en')
 
 def perform_ocr(image_path):
     img = cv2.imread(image_path)
